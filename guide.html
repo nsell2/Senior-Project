@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jquery and jquery-ui from cdnjs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js" integrity="sha512-cWEytOR8S4v/Sd3G5P1Yb7NbYgF1YAUzlg1/XpDuouZVo3FEiMXbeWh4zewcYu/sXYQR5PgYLRbhf18X/0vpRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- jquery-ui theme/styles -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+        <!-- my javascript file -->
+        <script src="index.js" defer></script>
+        <!-- my css file -->
+        <link rel="stylesheet" href="styles.css">
+        <meta name="author" content="Noah Sell">
+        <title>D&D Simplified | Guide</title>
+    </head>
+    <body>
+        <header>
+            <h1>D&D Simplified</h1>
+            <!-- <img src="" alt=""> -->
+            <nav aria-labelledby="mainNav">
+                <h2 id="mainNav">Main Navigation</h2>
+                <a href="index.html">Introduction</a>
+                <a href="guide.html">Guide</a>
+                <a href="characters.html">Characters</a>
+            </nav>
+        </header>
+        <main id="guide">
+            <h2>Guide</h2>
+            <div id="chapters">
+                <span id="menuOpener" role="button" class="transition"><img src="images/toc.svg" alt="Table of Contents Icon" id="tableOfContentsImg" class="transition" aria-labelledby="tocHeader"><h3 id="tocHeader">Table of Contents</h3></span>
+                <ul id="tableOfContents" class="menuClosed">
+                    <li id="toc1" class="goToAbilities"><a href="#abilities">I.&nbsp;&nbsp;<span class="underline">Abilities</span></a></li>
+                    <li id="toc2" class="goToClasses"><a href="#classes">II.&nbsp;&nbsp;<span class="underline">Classes</span></a></li>
+                    <li id="toc3" class="goToSpecies"><a href="#species">III.&nbsp;&nbsp;<span class="underline">Species</span></a></li>
+                    <li id="toc4" class="goToTraits"><a href="#traits">IV.&nbsp;&nbsp;<span class="underline">Character&nbsp;Traits</span></a></li>
+                    <!-- <li id="toc5"><a href="#alignment">V.&nbsp;&nbsp;<span class="underline">Alignment</span></a></li> -->
+                </ul>
+                <section id="abilities">
+                    <h3>Chapter I:&nbsp;&nbsp;Abilities</h3>
+                    <p>
+                        In D&D all characters, NPCs, and other creatures have the same six main abilities that help determine how skilled they are at completing various tasks. These Abilities are:
+                    </p>
+                    <div id="sixAbilities">
+                        <div>
+                            <h4>Strength</h4>
+                            <p>determines physical capabilities and mightiness</p>
+                        </div>
+                        <div>
+                            <h4>Dexterity</h4>
+                            <p>represents agility, balance, and reflexes</p>
+                        </div>
+                        <div>
+                            <h4>Constitution</h4>
+                            <p>determines overall health and stamina</p>
+                        </div>
+                        <div>
+                            <h4>Intelligence</h4>
+                            <p>determines mental capacity and ability to reason</p>
+                        </div>
+                        <div>
+                            <h4>Wisdom</h4>
+                            <p>determines perceptiveness and mental resilience</p>
+                        </div>
+                        <div>
+                            <h4>Charisma</h4>
+                            <p>determines charm, confidence, and dignity</p>
+                        </div>
+                    </div>
+                    <section>
+                        <h4>Ability Scores</h4>
+                        <p>
+                            Each ability is assigned a numerical value, called an Ability Score, from 1-30. A score of 1-9 represents very weak capability, 10-11 represents average competence, 12-20 represents strong aptitude, and 21-30 represents remarkable capability.
+                        </p>
+                        <p>
+                            When creating your character, you will likely start at Level 1, and as you progress through adventures you will gain more levels and increase your Ability Scores. There are a number of different ways that people choose to determine their initial Ability Scores, but the most simple is to use the Standard Array. This method gives you six numbers (15, 14, 13, 12, 10, and 8) and you choose how you want to assign each of those values to your Abilities.
+                        </p>
+                    </section>
+                    <section>
+                        <h4>The Dice Decide</h4>
+                        <p>
+                            The outcome of almost every decision you make or action you take is dictated by a roll of the dice. There are a number of different types of dice used in D&D depending on the circumstance, such as 4-sided, 6-sided, 8-sided, 12-sided, and rarely even 100-sided dice. Typically when determining the outcome of an action related to one of your abilities, a 20-sided dice (a “D20”) will be used to perform an Ability Check. During an Ability Check, the DM will decide a numerical value depending on the level of difficulty of the situation, this number is referred to as the Difficulty Class (or DC). Once the DC is set, the player rolls a D20 in hopes that it lands on a number equal to or higher than the DC, which results in a success, rolling a number lower than the DC results in failure.
+                        </p>
+                        <p class="aside">
+                            A DC of 5-10 would represent a fairly easy task, 11-15 would be a bit tougher, 16-20 would be quite hard, 21-25 would be incredibly difficult, and anything higher than that would be borderline impossible.
+                        </p>
+                        <h5>Ability Modifiers</h5>
+                        <p>
+                            This is where your Ability Score comes into play. Depending on the value of your Ability Score, you may add an additional value to what you rolled on the D20. This additional value is referred to as your Ability Modifier. An Ability Score of 10 has an Ability Modifier of +0, and for each two points higher than 10 that your Ability Score is, your Ability Modifier increases by +1 for that Ability.
+                        </p>
+                        <p class="aside">
+                            For example, if your character is attempting to kick down a door and you have a Strength score of 16, you can add +3 to whatever you roll on the D20, improving your chances of success.
+                        </p>
+                        <p>
+                            However, the reverse is also true. If your Ability Score is less than 10, your Ability Modifier will be negative and you will have to subtract from the number you rolled on the D20. An Ability Score of 8 or 9 has an Ability Modifier of -1, an Ability Score of 6 or 7 has an Ability Modifier of -2, and so on.
+                        </p>
+                        <h5>Saving Throws</h5>
+                        <p>
+                            Saving Throws (commonly referred to as “saves”) are a different type of Ability Check that your character makes when attempting to resist or evade something that is about to happen to them. Saving Throws will always include the name of the Ability that is being tested in that situation. For example, your character has found themselves in the middle of a bar brawl, a bottle is thrown at your head and the DM asks you to make a Dexterity Saving Throw to attempt to dodge out of the way.
+                        </p>
+                        <h5>Critical Success or Failure</h5>
+                        <p>
+                            There are two situations in which your Ability Scores and Modifiers will not even need to be considered. Rolling either a 1 or a 20 on the D20 results in a “Critical.” Rolling a 1 is considered a “Critical Failure,” meaning that the character automatically fails the task regardless of what the DC was. Rolling a natural 20, on the other hand, results in a “Critical Success,” and the character automatically succeeds regardless of the DC. 
+                        </p>
+                    </section>
+                    <section>
+                        <h4>Skills</h4>
+                        <p>
+                            There are 18 specific Skills, each pertaining to one of five Abilities (there is no Skill directly related to Constitution), which further help define the types of tasks that someone may excel or underperform at completing. These Skills are listed below, organized based on the Ability they relate to:
+                        </p>
+                        <div id="skillList">
+                            <section>
+                                <h5>Strength</h5>
+                                <ul>
+                                    <li>Athletics</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h5>Dexterity</h5>
+                                <ul>
+                                    <li>Acrobatics</li>
+                                    <li>Sleight of Hand</li>
+                                    <li>Stealth</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h5>Intelligence</h5>
+                                <ul>
+                                    <li>Arcana</li>
+                                    <li>History</li>
+                                    <li>Investigation</li>
+                                    <li>Nature</li>
+                                    <li>Religion</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h5>Wisdom</h5>
+                                <ul>
+                                    <li>Animal Handling</li>
+                                    <li>Insight</li>
+                                    <li>Medicine</li>
+                                    <li>Perception</li>
+                                    <li>Survival</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h5>Charisma</h5>
+                                <ul>
+                                    <li>Deception</li>
+                                    <li>Intimidation</li>
+                                    <li>Performance</li>
+                                    <li>Persuasion</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <h5>Proficiency Bonus</h5>
+                        <p>
+                            Your character will likely have Proficiency with more than one of these Skills, meaning they are particularly adept at that Skill, so whenever you roll an Ability Check pertaining to that skill you can also add your Proficiency Bonus to the result of that roll. At Character Level 1 your Proficiency Bonus is +2, and it increases by +1 every four levels up to a maximum of +6 at Level 17.
+                        </p>
+                        <p class="aside">
+                            Proficiency Bonuses are also applied to the weapons and armor your character is proficient in using, which are mainly determined by your character's Class (Chapter II).
+                        </p>
+                    </section>
+
+                    <ul id="navArrows1">
+                        <li class="goTo goToClasses"><a href="#classes">Chapter II: Classes  ––></a></li>
+                    </ul>
+                </section>
+                <section id="classes" class="tabDeselected">
+                    <h3>Chapter II:&nbsp;&nbsp;Classes</h3>
+                    <p>
+                        In D&D, each character will have one or more <span class="define">"Classes."</span> Classes can be thought of as a character's role, but they also govern characters' magical capabilities and proficiencies with different types of weapons and armor. The traits of the twelve standard classes are briefly described below:
+                    </p>
+                    <div id="classList">
+                        <section id="barbarian">
+                            <h4>Barbarian</h4>
+                            <p>
+                                Barbarians are fierce fighters and warriors who have the ability to channel their Rage to their benefit, making them even more powerful and agile. They commonly play the role of protectors in their communities, using Simple or Martial weapons as they lead the charge into battle. <p>You may choose to play as a Barbarian if you prefer to tackle your problems fist-first.</p>
+                            </p>
+                        </section>
+                        <section id="bard">
+                            <h4>Bard</h4>
+                            <p>
+                                Bards are experts of entertainment that live their lives on the road, always in search of new stories and experiences to inspire their next artistic piece. They channel their magic through the use of melodious music, dazzling dances, or venomous verses to heal the wounded, inspire their allies, or confuse their foes. Bards are proficient with Simple weapons and musical instruments. <p>You may choose to play as a Bard if you enjoy creative mockery or simply being the center of attention.</p>
+                            </p>
+                        </section>
+                        <section id="cleric">
+                            <h4>Cleric</h4>
+                            <p>
+                                Clerics are mortals chosen by gods or other powerful immortal beings to receive their blessings. They channel this divine magic to strengthen their allies or imbue their own weapons and armor with otherworldly power. <p>You may choose to play as a Cleric if you hear a compelling voice calling from the Outer Planes.</p>
+                            </p>
+                        </section>
+                        <section id="druid">
+                            <h4>Druid</h4>
+                            <p>
+                                Druids wield the power of the forces of nature, which can originate from devotion to gods or to nature itself. They use this power to control the elements, shapeshift into other creatures, and heal the sick and wounded. <p>You may choose to play as a druid if you secretly wish you could speak with plants and animals.</p>
+                            </p>
+                        </section>
+                        <section id="fighter">
+                            <h4>Fighter</h4>
+                            <p>
+                                Fighters are unparalleled in the arts of combat. They are adept with all different forms of weaponry and don whichever style of armor that best suits their needs. Some even further enhance their battle capabilities by imbuing their weaponry with magic. <p>You may choose to play as a Fighter if you dream to become a more versatile bringer of death.</p>
+                            </p>
+                        </section>
+                        <section id="monk">
+                            <h4>Monk</h4>
+                            <p>
+                                Monks are equally well-trained physically as they are mentally, by keeping their mind and body in unison they unlock the hidden potential within themselves. They are incredibly resourceful, even the most mundane of objects can become a lethal weapon in the hands of a Monk. <p>You may choose to play as a Monk if you have a passion for personal growth.</p>
+                            </p>
+                        </section>
+                        <section id="paladin">
+                            <h4>Paladin</h4>
+                            <p>
+                                Paladins are well-trained warriors who have sworn sacred oaths which guide their every decision. While they are skilled fighters, the powers granted to them by their oaths are what really make them shine as they smite their enemies and shield their allies from harm. <p>You may choose to play as a Paladin if you are exceptional at keeping promises.</p>
+                            </p>
+                        </section>
+                        <section id="ranger">
+                            <h4>Ranger</h4>
+                            <p>
+                                Rangers are the watchers of the wilderness. With deep connections to their environment, they are unparalleled trackers and exceptionally stealthy. They form deep bonds with their animal companions and are able to harness the wild power of the natural world to perform magical feats. <p>You may choose to play as a Ranger if you truly understand that only you can prevent forest fires.</p>
+                            </p>
+                        </section>
+                        <section id="rogue">
+                            <h4>Rogue</h4>
+                            <p>
+                                Rogues are notoriously cunning, resourceful, and quick on their feet. Their perceptiveness allows them to identify opportunities where many others would not and take advantage of subtle weaknesses, as they understand that one true strike is more efficient than several random blows. <p>You may choose to play as a Rogue if you prefer to make up the rules as you go.</p>
+                            </p>
+                        </section>
+                        <section id="sorcerer">
+                            <h4>Sorcerer</h4>
+                            <p>
+                                Sorcerers' magic is inextricably linked to their very being. The possible sources of their magic abilities are as many as they are varied, some are the result of their bloodline, others are the effects of having interacted with strange artifacts, and some are seemingly random with no clear catalyst. Whatever the source of their power may be, they are able to wield their magic without training, as if it is an extension of themselves. <p>You may choose to play as a Sorcerer if you enjoy reaping the benefits of nepotism.</p>
+                            </p>
+                        </section>
+                        <section id="warlock">
+                            <h4>Warlock</h4>
+                            <p>
+                                Warlocks have an unquenchable thirst for knowledge, which often leads them to dark, forbidden corners of the world in search of unknowable otherworldly beings. They enter into pacts with these beings and receive various arcane powers in return. Some serve their patrons lovingly, and others merely view their patrons as resources or a means to an end. <p>You may choose to play as a Warlock if you wish to gaze upon unfathomable eldritch horrors.</p>
+                            </p>
+                        </section>
+                        <section id="wizard">
+                            <h4>Wizard</h4>
+                            <p>
+                                Wizards are scholars of the magical arts. Their years spent studying magical theory and application make them experts at performing a vast variety of spells, and some even use their research to invent new forms of spells. Some Wizards are teachers, others serve as advisors, and some use their power against others to exert control, but what they all have in common is the undeniable itch to seek out new knowledge. <p>You may choose to play as a Wizard if you are a lifelong student.</p>
+                            </p>
+                        </section>
+                    </div>
+                    <ul id="navArrows2">
+                        <li class="goTo goToAbilities"><a href="#abilities"><––  Chapter I: Abilities</a></li>
+                        <li class="goTo goToSpecies"><a href="#species">Chapter III: Species/Races  ––></a></li>
+                    </ul>
+                </section>
+                <section id="species" class="tabDeselected">
+                    <h3>Chapter III:&nbsp;&nbsp;Species</h3>
+                    <p>
+                        Another important aspect to creating a character is deciding your character's Species (some older handbooks and guides will refer to this as your character's Race, but updated resources have changed the term to Species). There are many different Species in the D&D universe for players to interact with, and in the standard rule books there are 10 different Species to choose from for your character:
+                    </p>
+                    <div id="speciesList">
+                        <section>
+                            <h4>Aasimar</h4>
+                            <p>
+                                Aasimar are mortals that carry a tiny piece of the Upper Planes within themselves. Some are descendants of angelic beings, and others have been infused with their celestial power by other means. Their lifespans are twice as long as ordinary humans, but only have subtle differences in appearance. Some can temporarily sprout spectral wings, others can emit powerful beams of radiant light to sear their enemies. 
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Dwarf</h4>
+                            <p>
+                                Dwarves were created out of the earth long ago by a god who gave them an affinity for working with stone and metals, making them fine smiths. They are incredibly resilient as they are resistant to Poison and have lifespans 4-5 times longer than humans.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Dragonborn</h4>
+                            <p>
+                                Dragonborn are the descendants of dragons, but their exact origins are a debated mystery. They stand at 5-7 feet tall and look like bipedal, wingless dragons with varying colorations depending on their lineage. Depending on their lineage, Dragonborn can resist specific damage types, such as Fire, Frost or Poison, and can use their breath as a weapon to deal damage of that same type. Some can eventually learn to channel their draconic magic, allowing them to temporarily fly.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Elf</h4>
+                            <p>
+                                Over the millennia, Elves have ventured out from the Feywild to explore other planes of existence, with many choosing to settle in different parts of the Material Plane of mortals. Over time, the Elves have changed and taken on traits of their surroundings, giving rise to different types of Elves such as Wood Elves, High Elves, and Drow. Their lifespans are around 10 times longer than those of humans, and they don't need to sleep. Instead, they enter a trance-like state of meditation in which they remain fully aware of their surroundings.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Gnome</h4>
+                            <p>
+                                Gnomes are small, magical people who were created by the gods of invention and illusion. There are two types of Gnomes: Rock Gnomes and Forest Gnomes, both are incredibly clever, but each can perform different types of magic depending on their lineage. Gnomes stand at only 3-4 feet tall, and typically live 5-6 times longer than humans.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Goliath</h4>
+                            <p>
+                                Goliaths are descendants of giants, standing at 7-8 feet tall, and can temporarily grow even larger in size to enhance their strength and speed. Goliaths also have innate magical abilities that vary depending on their lineage to one of six different types of giants, such as the ability to teleport short distances or strike enemies with Thunder in retaliation. 
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Halfling</h4>
+                            <p>
+                                Halflings are especially favored by the gods of life and home, and community is of the utmost importance to them. They seem to be supernaturally lucky, as when they are in grave danger unseen forces appear to intervene on their behalf. Their small stature makes them naturally stealthy, and they can slip away through crowds with ease.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Human</h4>
+                            <p>
+                                Humans can be found all over the universe, striving to accomplish as much as they can in their relatively short lifespans. They are considerably ambitious, resourceful, and versatile, with the potential to learn a great many skills.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Orc</h4>
+                            <p>
+                                Orcs trace their creation back to an old powerful god known for roaming the wide open parts of the world, who gave them the gifts of endurance, determination, and enhanced vision in the dark. Orcs are tall and broad, with grayish skin, pointy ears, and prominent lower teeth. Many are eager to set out on adventures and travel the world to create tales of their own.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Tiefling</h4>
+                            <p>
+                                Tieflings can trace their ancestry back to devils, demons, or other manner of Fiends, which gives them infernal power but has no relevance to their morality. There are three legacies of Tieflings, which determine their appearance and specific magical abilities: Abyssal Tieflings are more adept with Poison, Chthonic Tieflings wield Necrotic magic, and Infernal Tieflings are the most attuned to Fire.
+                            </p>
+                        </section>
+                    </div>
+                    <ul id="navArrows3">
+                        <li class="goTo goToClasses"><a href="#classes"><––  Chapter II: Classes</a></li>
+                        <li class="goTo goToTraits"><a href="#traits">Chapter IV: Character Traits  ––></a></li>
+                    </ul>
+                </section>
+                <section id="traits" class="tabDeselected">
+                    <h3>Chapter IV:&nbsp;&nbsp;Character Traits</h3>
+                    <p>
+                        At this point, you likely have an idea of which Classes and Species are standing out the most to you, so now it's time to put the finishing touches on your character.
+                    </p>
+                    <h4>Appearance</h4>
+                    <p>
+                        The appearance of your character is entirely up to you. How tall or short are they? What length, color, and style is their hair? What other distinguishing characteristics do they have, and how do they tie in to your character's backstory? 
+                    </p>
+                    <h4>Background</h4>
+                    <p>
+                        The Background you choose helps shape the identity of your character, it describes their occupation or role they played before embarking on their adventure. The narrative details of this Background can be tweaked and altered as you see fit for your character, so don't fret too much about that. However, each Background also lists three Abilities that you will have the option to increase your Ability Scores for (you can choose to increase one Ability Score by +2 and one by +1, or increase all three by +1), as well as proficiency with two Skills, so you'll want to select the Background that benefits you the most when it comes to the sort of character you want to play as.
+                    </p>
+                    <div id="backgroundList">
+                        <section>
+                            <h5>Acolyte</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Intelligence, Wisdom, Charisma</li>
+                                <li><span>Skill Proficiencies:</span> Insight & Religion</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Artisan</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Strength, Dexterity, Intelligence</li>
+                                <li><span>Skill Proficiencies:</span> Investigation & Persuasion</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Charlatan</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Dexterity, Constitution, Charisma</li>
+                                <li><span>Skill Proficiencies:</span> Deception & Sleight of Hand</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Criminal</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Dexterity, Constitution, Intelligence</li>
+                                <li><span>Skill Proficiencies:</span> Sleight of Hand & Stealth</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Entertainer</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Strength, Dexterity, Charisma</li>
+                                <li><span>Skill Proficiencies:</span> Acrobatics & Performance</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Farmer</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Strength, Constitution, Wisdom</li>
+                                <li><span>Skill Proficiencies:</span> Animal Handling & Nature</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Guard</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Strength, Intelligence, Wisdom</li>
+                                <li><span>Skill Proficiencies:</span> Athletics & Perception</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Guide</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Dexterity, Constitution, Wisdom</li>
+                                <li><span>Skill Proficiencies:</span> Stealth & Survival</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Hermit</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Constitution, Wisdom, Charisma</li>
+                                <li><span>Skill Proficiencies:</span> Medicine & Religion</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Merchant</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Constitution, Intelligence, Charisma</li>
+                                <li><span>Skill Proficiencies:</span> Animal Handling & Persuasion</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Noble</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Strength, Intelligence, Charisma</li>
+                                <li><span>Skill Proficiencies:</span> History & Persuasion</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Sage</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Constitution, Intelligence, Wisdom</li>
+                                <li><span>Skill Proficiencies:</span> Arcana & History</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Sailor</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Strength, Dexterity, Wisdom</li>
+                                <li><span>Skill Proficiencies:</span> Acrobatics & Perception</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Scribe</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Dexterity, Intelligence, Wisdom</li>
+                                <li><span>Skill Proficiencies:</span> Investigation & Perception</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Soldier</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Strength, Dexterity, Constitution</li>
+                                <li><span>Skill Proficiencies:</span> Athletics & Intimidation</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h5>Wayfarer</h5>
+                            <ul>
+                                <li><span>Main Abilities:</span> Dexterity, Wisdom, Charisma</li>
+                                <li><span>Skill Proficiencies:</span> Insight & Stealth</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <h4>Alignment</h4>
+                    <p>
+                        D&D uses a simple grid system to visually plot creatures' and characters' overall attitudes and morals. Players may stray from the Alignment they initially choose for their character, and that is perfectly normal, you can simply think of it as a tool to help you imagine where your character's values lie and how they might react to different situations.
+                    </p>
+                    <p>
+                        The Alignment grid uses two axes, each with three terms. The first axis describes morality in terms of "Good" (compassionate, kind, honest), "Neutral" (selfish, disinterested, pragmatic), and "Evil" (dishonest, greedy, cruel). 
+                    </p>
+                    <p>
+                        The second axis describes attitude towards societal rules and order in terms of "Lawful" (methodical, loyal, cooperative), "Neutral" (selfish, disinterested, pragmatic), or "Chaotic" (impulsive, rebellious, self-absorbed).
+                    </p>
+                    <p>
+                        Using the grid, you can figure out your character's Alignment to help you decide how they act. It's up to you, are they a Chaotic Good character who acts based on their own conscience, disregarding the law to help those in need? Or are they Neutral Evil, not caring about the pain they cause others as they pursue their desires? But again, your Alignment doesn't have to be set in stone, your character could grow and their attitude may shift over time as their story progresses.
+                    </p>
+                    <ul id="alignmentGrid">
+                        <li>Lawful<br>Good</li>
+                        <li>Neutral<br>Good</li>
+                        <li>Chaotic<br>Good</li>
+                        <li>Lawful<br>Neutral</li>
+                        <li>True<br>Neutral</li>
+                        <li>Chaotic<br>Neutral</li>
+                        <li>Lawful<br>Evil</li>
+                        <li>Neutral<br>Evil</li>
+                        <li>Chaotic<br>Evil</li>
+                    </ul>
+                    <p>
+                        Now that you've made it through the basics, it's time to put it all together and create your character!
+                    </p>
+                    <ul id="navArrows4">
+                        <li class="goTo goToSpecies"><a href="#species"><––  Chapter III: Species/Races</a></li>
+                        <!-- <li class="goTo goToAlignment">Chapter V: Alignment  ––></li> -->
+                    </ul>
+                    <a href="characters.html" class="underline" id="charactersNext">Characters ––></a>
+                </section>
+                <!-- <section id="alignment" class="tabDeselected">
+                    <h3>Chapter V:&nbsp;&nbsp;Alignment</h3>
+                    <ul id="navArrows5">
+                        <li class="goTo goToTraits underline">Chapter IV: Character Traits  <––</li>
+                    </ul>
+                    <a href="characters.html" class="underline" id="charactersNext">Characters ––></a>
+                </section> -->
+            </div>
+        </main>
+        <footer>    
+            <!-- <h3>Socials</h3>
+        <div id="socials">
+           svg icons from https://icons8.com/icon/set/social-media/family-tiny 
+            <a href="#instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 16 16"><path d="M 5 1 C 2.791 1 1 2.791 1 5 L 1 11 C 1 13.209 2.791 15 5 15 L 11 15 C 13.209 15 15 13.209 15 11 L 15 5 C 15 2.791 13.209 1 11 1 L 5 1 z M 5 2 L 11 2 C 12.657 2 14 3.343 14 5 L 14 11 C 14 12.657 12.657 14 11 14 L 5 14 C 3.343 14 2 12.657 2 11 L 2 5 C 2 3.343 3.343 2 5 2 z M 5 3 C 3.895 3 3 3.895 3 5 L 3 11 C 3 12.105 3.895 13 5 13 L 11 13 C 12.105 13 13 12.105 13 11 L 13 5 C 13 3.895 12.105 3 11 3 L 5 3 z M 11.5 4 C 11.776 4 12 4.224 12 4.5 C 12 4.776 11.776 5 11.5 5 C 11.224 5 11 4.776 11 4.5 C 11 4.224 11.224 4 11.5 4 z M 8 5 C 9.657 5 11 6.343 11 8 C 11 9.657 9.657 11 8 11 C 6.343 11 5 9.657 5 8 C 5 6.343 6.343 5 8 5 z M 8 6 A 2 2 0 0 0 8 10 A 2 2 0 0 0 8 6 z"></path></svg>
+            </a>
+            <a href="#twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 16 16">
+                    <path d="M16,2.105l-0.274-0.222c0,0-1.109,0.747-1.752,0.814c-0.619-0.657-1.503-1.064-2.483-1.064c-1.88,0-3.405,1.511-3.405,3.374	c0,0.263,0.031,0.52,0.088,0.769c-2.829-0.14-4.578-1.79-6.256-3.832L1.201,2.272c0,0-0.457,1.339-0.457,2.766	c0,3.841,3.03,6.143,4.179,6.693c-1.294,1.139-4.401,0.984-4.401,0.984L0,13.337C0,13.337,1.885,15,5.22,15	c6.262,0,9.689-4.615,9.689-9.604c0-0.146-0.005-0.292-0.013-0.434C15.653,4.105,16,3.214,16,2.105z"></path>
+                    </svg>
+            </a>
+            <a href="#github">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 16 16">
+                    <path d="M8,0C3.6,0,0,3.6,0,8c0,3.526,2.315,6.534,5.498,7.591c0.377,0.055,0.52-0.179,0.52-0.385c0-0.19-0.007-0.693-0.011-1.361	c-2.225,0.483-2.695-1.072-2.695-1.072c-0.364-0.924-0.888-1.17-0.888-1.17c-0.726-0.496,0.055-0.486,0.055-0.486	c0.803,0.057,1.225,0.824,1.225,0.824c0.714,1.223,1.872,0.87,2.328,0.665c0.073-0.517,0.279-0.87,0.508-1.069	c-1.776-0.202-3.644-0.888-3.644-3.954c0-0.873,0.312-1.587,0.823-2.147C3.637,5.233,3.362,4.419,3.798,3.318	c0,0,0.672-0.215,2.2,0.82C6.636,3.961,7.32,3.872,8,3.869c0.679,0.003,1.364,0.092,2.003,0.269c1.527-1.035,2.198-0.82,2.198-0.82	c0.436,1.101,0.162,1.915,0.08,2.117c0.513,0.559,0.822,1.273,0.822,2.147c0,3.073-1.87,3.75-3.653,3.948	c0.287,0.247,0.543,0.735,0.543,1.482c0,1.07-0.01,1.932-0.01,2.195c0,0.208,0.141,0.443,0.521,0.385C13.686,14.532,16,11.526,16,8	C16,3.6,12.4,0,8,0z"></path>
+                    </svg>
+            </a>
+            <a href="#linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 30 30">
+                    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
+                </svg>
+            </a>
+        </div> -->
+        <small>Created by Noah Sell</small>
+        <small>For more in-depth D&D tutorials and official guides visit</small>
+        <small><a href="https://www.dndbeyond.com/essentials">D&D Beyond</a></small>
+        </footer>
+    </body>
+</html>
