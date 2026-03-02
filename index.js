@@ -1,1 +1,213 @@
-'use strict';const _0x471941=_0x3b63;(function(_0x69091c,_0x652637){const _0x24b9d2=_0x3b63,_0x4e25cb=_0x69091c();while(!![]){try{const _0x413390=-parseInt(_0x24b9d2(0x1da))/0x1*(-parseInt(_0x24b9d2(0x1e7))/0x2)+parseInt(_0x24b9d2(0x1e4))/0x3+-parseInt(_0x24b9d2(0x1ec))/0x4*(-parseInt(_0x24b9d2(0x1ff))/0x5)+-parseInt(_0x24b9d2(0x1e8))/0x6*(parseInt(_0x24b9d2(0x1f9))/0x7)+-parseInt(_0x24b9d2(0x214))/0x8*(parseInt(_0x24b9d2(0x227))/0x9)+-parseInt(_0x24b9d2(0x20e))/0xa+parseInt(_0x24b9d2(0x20a))/0xb;if(_0x413390===_0x652637)break;else _0x4e25cb['push'](_0x4e25cb['shift']());}catch(_0x40b43c){_0x4e25cb['push'](_0x4e25cb['shift']());}}}(_0x200d,0x6a41d));let menuOpener=document[_0x471941(0x206)]('menuOpener'),tableOfContentsImg=document[_0x471941(0x206)](_0x471941(0x203));menuOpener[_0x471941(0x20d)](_0x471941(0x202),function(){const _0x1d04b4=_0x471941;tableOfContentsImg[_0x1d04b4(0x1de)]=_0x1d04b4(0x222);}),menuOpener[_0x471941(0x20d)](_0x471941(0x21d),function(){const _0x1aa7e=_0x471941;tableOfContentsImg[_0x1aa7e(0x1de)]=_0x1aa7e(0x220);});let tableOfContents=document[_0x471941(0x206)](_0x471941(0x1fd));document[_0x471941(0x211)](_0x471941(0x213))['addEventListener'](_0x471941(0x1fb),function(){const _0x4d2ed4=_0x471941;tableOfContents['classList'][_0x4d2ed4(0x208)](_0x4d2ed4(0x221)),tableOfContents[_0x4d2ed4(0x1f6)][_0x4d2ed4(0x208)]('menuOpen');});function _0x200d(){const _0x174b03=['355ZqLWEX','classChoice','strength','mouseenter','tableOfContentsImg','.goToAbilities','speciesChoice','getElementById','#constitution','toggle','characterSheet','14198910HpuEAF','Strength:\x20','\x0aConstitution:\x20','addEventListener','5999270CthKtl','dexterity','\x0aIntelligence:\x20','querySelector','#backgroundSelect','#menuOpener','8WXUWzo','#wisdom','Chaotic\x20Good','val','Acolyte','Lawful\x20Evil','.goToSpecies','Chaotic\x20Evil','#strength','mouseleave','Chaotic\x20Neutral','tabDeselected','images/toc.svg','menuClosed','images/color-toc.svg','remove','submit','intelligence','name','6008139cVVTSG','hidden','#classSelect','Lawful\x20Neutral','preventDefault','firstLine','getItem','125113JEsWhl','forEach','.goToClasses','secondLine','src','\x0aDexterity:\x20','charisma','Neutral\x20Evil','add','innerHTML','112764HXBnLV','\x0aCharisma:\x20','Background:\x20','12cdhNIb','6RKtFqA','.alignments','Lawful\x20Good','setItem','24172ekMSwg','#dexterity','thirdLine','constitution','querySelectorAll','#speciesChoice','.goToTraits','alignment','Name','characterLevel','classList','background','Aasimar','5637814sAfifK','#characterLevel','click','True\x20Neutral','tableOfContents','classes'];_0x200d=function(){return _0x174b03;};return _0x200d();}let chapterOne=document[_0x471941(0x206)]('abilities'),chapterTwo=document[_0x471941(0x206)](_0x471941(0x1fe)),chapterThree=document[_0x471941(0x206)]('species'),chapterFour=document['getElementById']('traits'),goToAbilities=document[_0x471941(0x1f0)](_0x471941(0x204)),goToClasses=document['querySelectorAll'](_0x471941(0x1dc)),goToSpecies=document['querySelectorAll'](_0x471941(0x21a)),goToTraits=document[_0x471941(0x1f0)](_0x471941(0x1f2));goToAbilities['forEach'](_0x55c116=>{const _0xfb7a6e=_0x471941;_0x55c116[_0xfb7a6e(0x20d)]('click',showAbilities);}),goToClasses['forEach'](_0x20cfd8=>{const _0x561509=_0x471941;_0x20cfd8[_0x561509(0x20d)](_0x561509(0x1fb),showClasses);}),goToSpecies[_0x471941(0x1db)](_0x46dc4a=>{const _0x354787=_0x471941;_0x46dc4a[_0x354787(0x20d)](_0x354787(0x1fb),showSpecies);}),goToTraits[_0x471941(0x1db)](_0x5ac727=>{_0x5ac727['addEventListener']('click',showTraits);});function _0x3b63(_0x402a9f,_0x524d21){const _0x200d95=_0x200d();return _0x3b63=function(_0x3b63e3,_0x231dd0){_0x3b63e3=_0x3b63e3-0x1da;let _0x4d93c2=_0x200d95[_0x3b63e3];return _0x4d93c2;},_0x3b63(_0x402a9f,_0x524d21);}function showAbilities(){const _0x316407=_0x471941;chapterTwo['classList'][_0x316407(0x1e2)](_0x316407(0x21f)),chapterThree[_0x316407(0x1f6)][_0x316407(0x1e2)](_0x316407(0x21f)),chapterFour['classList'][_0x316407(0x1e2)](_0x316407(0x21f)),chapterOne[_0x316407(0x1f6)][_0x316407(0x223)](_0x316407(0x21f));};function showClasses(){const _0x32bd35=_0x471941;chapterOne['classList'][_0x32bd35(0x1e2)]('tabDeselected'),chapterThree[_0x32bd35(0x1f6)][_0x32bd35(0x1e2)](_0x32bd35(0x21f)),chapterFour[_0x32bd35(0x1f6)]['add']('tabDeselected'),chapterTwo['classList']['remove'](_0x32bd35(0x21f));};function showSpecies(){const _0x233442=_0x471941;chapterOne['classList'][_0x233442(0x1e2)]('tabDeselected'),chapterTwo[_0x233442(0x1f6)][_0x233442(0x1e2)](_0x233442(0x21f)),chapterFour[_0x233442(0x1f6)]['add'](_0x233442(0x21f)),chapterThree[_0x233442(0x1f6)][_0x233442(0x223)](_0x233442(0x21f));};function showTraits(){const _0x19b670=_0x471941;chapterOne[_0x19b670(0x1f6)][_0x19b670(0x1e2)](_0x19b670(0x21f)),chapterTwo[_0x19b670(0x1f6)][_0x19b670(0x1e2)](_0x19b670(0x21f)),chapterThree[_0x19b670(0x1f6)][_0x19b670(0x1e2)](_0x19b670(0x21f)),chapterFour[_0x19b670(0x1f6)][_0x19b670(0x223)](_0x19b670(0x21f));};let alignment=_0x471941(0x216),setAlignment=document[_0x471941(0x1f0)](_0x471941(0x1e9));setAlignment['forEach'](_0x488da6=>{const _0x48874d=_0x471941;_0x488da6[_0x48874d(0x20d)](_0x48874d(0x1fb),function(_0x23d4a4){const _0x285da4=_0x48874d;let _0x28f627=this['id'];if(_0x28f627='lg'){let _0x3c3711=_0x285da4(0x1ea);}else{if(_0x28f627='ng'){let _0x13afb7='Neutral\x20Good';}else{if(_0x28f627='cg'){let _0x5cab22=_0x285da4(0x216);}else{if(_0x28f627='ln'){let _0x4107da=_0x285da4(0x22a);}else{if(_0x28f627='tn'){let _0x43c0db=_0x285da4(0x1fc);}else{if(_0x28f627='cn'){let _0x1a29dd=_0x285da4(0x21e);}else{if(_0x28f627='le'){let _0x11ef3e=_0x285da4(0x219);}else{if(_0x28f627='ne'){let _0x1174e5=_0x285da4(0x1e1);}else{if(_0x28f627='ce'){let _0x46c474=_0x285da4(0x21b);}}}}}}}}}});});let nameInput=_0x471941(0x1f4),characterLevel=0x1,classChoice='Barbarian',speciesChoice=_0x471941(0x1f8),strength=0x8,dexterity=0xa,constitution=0xc,intelligence=0xd,wisdom=0xe,charisma=0xf,background=_0x471941(0x218),button=document['getElementById'](_0x471941(0x224));button[_0x471941(0x20d)](_0x471941(0x1fb),_0x3659bf=>{const _0x2f1640=_0x471941;_0x3659bf[_0x2f1640(0x22b)]();}),$('#submit')[_0x471941(0x1fb)](function(){const _0x34c818=_0x471941;let _0x3796b1=$('#nameInput')[_0x34c818(0x217)](),_0x1e669c=$(_0x34c818(0x1fa))[_0x34c818(0x217)](),_0x30376e=$(_0x34c818(0x229))['val'](),_0x45362a=$(_0x34c818(0x1f1))[_0x34c818(0x217)](),_0x5a4fc2=$(_0x34c818(0x21c))[_0x34c818(0x217)](),_0xa77592=$(_0x34c818(0x1ed))[_0x34c818(0x217)](),_0x48a959=$(_0x34c818(0x207))[_0x34c818(0x217)](),_0x6845bd=$('#intelligence')[_0x34c818(0x217)](),_0x23f773=$(_0x34c818(0x215))[_0x34c818(0x217)](),_0x247293=$('#charisma')['val'](),_0x370a46=$(_0x34c818(0x212))[_0x34c818(0x217)]();localStorage[_0x34c818(0x1eb)](_0x34c818(0x226),_0x3796b1),localStorage[_0x34c818(0x1eb)]('characterLevel',_0x1e669c),localStorage['setItem']('classChoice',_0x30376e),localStorage[_0x34c818(0x1eb)](_0x34c818(0x205),_0x45362a),localStorage['setItem'](_0x34c818(0x201),_0x5a4fc2),localStorage[_0x34c818(0x1eb)](_0x34c818(0x20f),_0xa77592),localStorage['setItem'](_0x34c818(0x1ef),_0x48a959),localStorage[_0x34c818(0x1eb)](_0x34c818(0x225),_0x6845bd),localStorage[_0x34c818(0x1eb)]('wisdom',_0x23f773),localStorage[_0x34c818(0x1eb)](_0x34c818(0x1e0),_0x247293),localStorage[_0x34c818(0x1eb)](_0x34c818(0x1f7),_0x370a46),localStorage['setItem'](_0x34c818(0x1f3),alignment);let _0x2451a8=localStorage[_0x34c818(0x22d)](_0x34c818(0x226)),_0x1079c1=localStorage['getItem'](_0x34c818(0x1f5)),_0x24ee27=localStorage[_0x34c818(0x22d)](_0x34c818(0x200)),_0xaed04c=localStorage[_0x34c818(0x22d)]('speciesChoice'),_0x2cf379=localStorage[_0x34c818(0x22d)]('strength'),_0x786f0d=localStorage[_0x34c818(0x22d)](_0x34c818(0x20f)),_0x22c50b=localStorage[_0x34c818(0x22d)]('constitution'),_0x2c3318=localStorage[_0x34c818(0x22d)](_0x34c818(0x225)),_0x51d88c=localStorage['getItem']('wisdom'),_0x4bcb53=localStorage['getItem'](_0x34c818(0x1e0)),_0x4d8336=localStorage[_0x34c818(0x22d)](_0x34c818(0x1f7)),_0x29f63c=localStorage[_0x34c818(0x22d)](_0x34c818(0x1f3)),_0x4416cb=document[_0x34c818(0x206)](_0x34c818(0x22c)),_0x1ea697=document[_0x34c818(0x206)](_0x34c818(0x1dd)),_0xcb0a24=document['getElementById'](_0x34c818(0x1ee)),_0x58d4d5=_0x2451a8+',\x20a\x20Level\x20'+_0x1079c1+'\x20'+_0x29f63c+'\x20'+_0xaed04c+'\x20'+_0x24ee27,_0xdd1a1e=_0x34c818(0x1e6)+_0x4d8336,_0x122dc9=_0x34c818(0x20b)+_0x2cf379+_0x34c818(0x1df)+_0x786f0d+_0x34c818(0x20c)+_0x22c50b+_0x34c818(0x210)+_0x2c3318+'\x0aWisdom:\x20'+_0x51d88c+_0x34c818(0x1e5)+_0x4bcb53;_0x4416cb['innerHTML']=_0x58d4d5,_0x1ea697[_0x34c818(0x1e3)]=_0xdd1a1e,_0xcb0a24[_0x34c818(0x1e3)]=_0x122dc9;let _0x363ee0=document['getElementById'](_0x34c818(0x209));_0x363ee0[_0x34c818(0x1f6)][_0x34c818(0x223)](_0x34c818(0x228));});
+"use strict";
+
+let menuOpener = document.getElementById("menuOpener");
+let tableOfContentsImg = document.getElementById("tableOfContentsImg");
+menuOpener.addEventListener("mouseenter", function() {
+    tableOfContentsImg.src = "images/color-toc.svg";
+});
+menuOpener.addEventListener("mouseleave", function() {
+    tableOfContentsImg.src = "images/toc.svg";
+});
+
+let tableOfContents = document.getElementById("tableOfContents");
+document.querySelector('#menuOpener').addEventListener('click', function() {
+    tableOfContents.classList.toggle('menuClosed');
+    tableOfContents.classList.toggle('menuOpen');
+});
+
+let chapterOne = document.getElementById("abilities");
+let chapterTwo = document.getElementById("classes");
+let chapterThree = document.getElementById("species");
+let chapterFour = document.getElementById("traits");
+
+let goToAbilities = document.querySelectorAll(".goToAbilities");
+let goToClasses = document.querySelectorAll(".goToClasses");
+let goToSpecies = document.querySelectorAll(".goToSpecies");
+let goToTraits = document.querySelectorAll(".goToTraits");
+goToAbilities.forEach(goTo => {
+    goTo.addEventListener('click', showAbilities);
+});
+goToClasses.forEach(goTo => {
+    goTo.addEventListener('click', showClasses);
+});
+goToSpecies.forEach(goTo => {
+    goTo.addEventListener('click', showSpecies);
+});
+goToTraits.forEach(goTo => {
+    goTo.addEventListener('click', showTraits);
+});
+
+function showAbilities() {
+    chapterTwo.classList.add("tabDeselected");
+    chapterThree.classList.add("tabDeselected");
+    chapterFour.classList.add("tabDeselected");
+    chapterOne.classList.remove("tabDeselected");
+};
+function showClasses() {
+    chapterOne.classList.add("tabDeselected");
+    chapterThree.classList.add("tabDeselected");
+    chapterFour.classList.add("tabDeselected");
+    chapterTwo.classList.remove("tabDeselected");
+};
+function showSpecies() {
+    chapterOne.classList.add("tabDeselected");
+    chapterTwo.classList.add("tabDeselected");
+    chapterFour.classList.add("tabDeselected");
+    chapterThree.classList.remove("tabDeselected");
+};
+function showTraits() {
+    chapterOne.classList.add("tabDeselected");
+    chapterTwo.classList.add("tabDeselected");
+    chapterThree.classList.add("tabDeselected");
+    chapterFour.classList.remove("tabDeselected");
+};
+
+let alignment = "";
+// let setAlignment = document.querySelectorAll(".alignments");
+document.getElementById("lg").addEventListener('click', function(){
+    alignment = "Lawful Good";
+    console.log(alignment);
+});
+document.getElementById("ng").addEventListener('click', function(){
+    alignment = "Neutral Good";
+    console.log(alignment);
+});
+document.getElementById("cg").addEventListener('click', function(){
+    alignment = "Chaotic Good";
+    console.log(alignment);
+});
+document.getElementById("ln").addEventListener('click', function(){
+    alignment = "Lawful Neutral";
+    console.log(alignment);
+});
+document.getElementById("tn").addEventListener('click', function(){
+    alignment = "True Neutral";
+    console.log(alignment);
+});
+document.getElementById("cn").addEventListener('click', function(){
+    alignment = "Chaotic Neutral";
+    console.log(alignment);
+});
+document.getElementById("le").addEventListener('click', function(){
+    alignment = "Lawful Evil";
+    console.log(alignment);
+});
+document.getElementById("ne").addEventListener('click', function(){
+    alignment = "Neutral Evil";
+    console.log(alignment);
+});
+document.getElementById("ce").addEventListener('click', function(){
+    alignment = "Chaotic Evil";
+    console.log(alignment);
+});
+
+// setAlignment.forEach(newAlignment => {
+//     newAlignment.addEventListener('click', function(event) {
+//         console.log(event.target.id);
+//         let alignmentID = this.id;
+//         if(alignmentID = "lg") {
+//             alignment = "Lawful Good";
+//         } else if (alignmentID = "ng") {
+//             alignment = "Neutral Good";
+//         } else if (alignmentID = "cg") {
+//             alignment = "Chaotic Good";
+//         } else if (alignmentID = "ln") {
+//             alignment = "Lawful Neutral";
+//         } else if (alignmentID = "tn") {
+//             alignment = "True Neutral";
+//         } else if (alignmentID = "cn") {
+//             alignment = "Chaotic Neutral";
+//         } else if (alignmentID = "le") {
+//             alignment = "Lawful Evil";
+//         } else if (alignmentID = "ne") {
+//             alignment = "Neutral Evil";
+//         } else if (alignmentID = "ce") {
+//             alignment = "Chaotic Evil";
+//         }
+//         console.log(alignmentID);
+//     });
+// });
+
+    let nameInput = "Name";
+    let characterLevel = 1;
+    let classChoice = "Barbarian";
+    let speciesChoice = "Aasimar";
+    let strength = 8;
+    let dexterity = 10;
+    let constitution = 12;
+    let intelligence = 13;
+    let wisdom = 14;
+    let charisma = 15;
+    let background = "Acolyte";
+
+let button = document.getElementById('submit');
+button.addEventListener('click', (event) => {
+        event.preventDefault();
+});
+$("#submit").click(function(){
+    let nameInput = $("#nameInput").val();
+    let characterLevel = $("#characterLevel").val();
+    let classChoice = $("#classSelect").val();
+    let speciesChoice = $("#speciesChoice").val();
+    let strength = $("#strength").val();
+    let dexterity = $("#dexterity").val();
+    let constitution = $("#constitution").val();
+    let intelligence = $("#intelligence").val();
+    let wisdom = $("#wisdom").val();
+    let charisma = $("#charisma").val();
+    let background = $("#backgroundSelect").val();
+    // use the variables to info to local storage
+    localStorage.setItem("name", nameInput);
+    localStorage.setItem("characterLevel", characterLevel);
+    localStorage.setItem("classChoice", classChoice);
+    localStorage.setItem("speciesChoice", speciesChoice);
+    localStorage.setItem("strength", strength);
+    localStorage.setItem("dexterity", dexterity);
+    localStorage.setItem("constitution", constitution);
+    localStorage.setItem("intelligence", intelligence);
+    localStorage.setItem("wisdom", wisdom);
+    localStorage.setItem("charisma", charisma);
+    localStorage.setItem("background", background);
+    localStorage.setItem("alignment", alignment);
+    let name = localStorage.getItem("name");
+    let level = localStorage.getItem("characterLevel");
+    let characterClass = localStorage.getItem("classChoice");
+    let species = localStorage.getItem("speciesChoice");
+    let strengthScore = localStorage.getItem("strength");
+    let dexterityScore = localStorage.getItem("dexterity");
+    let constitutionScore = localStorage.getItem("constitution");
+    let intelligenceScore = localStorage.getItem("intelligence");
+    let wisdomScore = localStorage.getItem("wisdom");
+    let charismaScore = localStorage.getItem("charisma");
+    let characterBackground = localStorage.getItem("background");
+    let characterAlignment = localStorage.getItem("alignment");
+    // display a welcome message with their information
+    let newCharInfo = document.getElementById("newCharInfo");
+    let newCharAlignment = document.getElementById("newCharAlignment");
+    // let thirdLine = document.getElementById("thirdLine");
+    let newCharStr = document.getElementById("newCharStr");
+    let newCharDex = document.getElementById("newCharDex");
+    let newCharCon = document.getElementById("newCharCon");
+    let newCharInt = document.getElementById("newCharInt");
+    let newCharWis = document.getElementById("newCharWis");
+    let newCharCha = document.getElementById("newCharCha");
+    let firstString = `${name}, a Level ${level} ${species} ${characterClass} ${characterBackground}`;
+    let secondString = `Alignment: ${alignment}`;
+    // let thirdString = `Strength: ${strengthScore}\nDexterity: ${dexterityScore}\nConstitution: ${constitutionScore}\nIntelligence: ${intelligenceScore}\nWisdom: ${wisdomScore}\nCharisma: ${charismaScore}`;
+    newCharInfo.innerHTML = firstString;
+    newCharAlignment.innerHTML = secondString;
+    // thirdLine.innerHTML = thirdString;
+    newCharStr.innerHTML = `Strength<br>${strengthScore}`;
+    newCharDex.innerHTML = `Dexterity<br>${dexterityScore}`;
+    newCharCon.innerHTML = `Constitution<br>${constitutionScore}`;
+    newCharInt.innerHTML = `Intelligence<br>${intelligenceScore}`;
+    newCharWis.innerHTML = `Wisdom<br>${wisdomScore}`;
+    newCharCha.innerHTML = `Charisma<br>${charismaScore}`;
+    
+
+    // firstLine.innerHTML(`${name}, a Level ${level} ${characterAlignment} ${species} ${characterClass}`);
+    // secondLine.innerHTML(`Background: ${characterBackground}`)
+    // thirdLine.innerHTML(`Strength: ${strengthScore}\nDexterity: ${dexterityScore}\nConstitution: ${constitutionScore}\nIntelligence: ${intelligenceScore}\nWisdom: ${wisdomScore}\nCharisma: ${charismaScore}`);
+    let characterSheet = document.getElementById("characterSheet");
+    characterSheet.classList.remove("hidden");
+})
